@@ -1,0 +1,11 @@
+version: "2.1"
+
+services:
+  go-plugin:
+    build:
+      context: .
+    image: 'go-plugin:${IMAGE_TAG:-1.0}'
+    container_name: go-plugin
+    stdin_open: true
+    tty: true
+    command: bash
