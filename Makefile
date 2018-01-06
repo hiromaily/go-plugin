@@ -43,6 +43,6 @@ bld-plugin:
 	go build -buildmode=plugin ./plugins/calc/calc.go
 
 bld-caller:
-	go build -i -v -o ${GOPATH}/bin/plugin_caller ./caller/
+	go build -i -race -v -o ${GOPATH}/bin/plugin_caller ./caller/
 
 
